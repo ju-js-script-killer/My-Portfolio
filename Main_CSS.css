@@ -1,9 +1,13 @@
 .header {
-  background:  url(IMG/3394.jpg) no-repeat center / cover ;
-  height: 300px;
-
+  background:  url(IMG/3395.jpg) no-repeat center / cover ;
+  height: 700px;
+  filter: alpha(Opacity=75); /* Полупрозрачность для IE */
+  opacity: 0.75; /* Полупрозрачность для других браузеров */
 
 }
+
 h1, h2 {
-  color: #ffffff;
+  color: #000000;
+  text-align: left;
+
 }
