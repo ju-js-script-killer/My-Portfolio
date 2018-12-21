@@ -1,13 +1,30 @@
+body {
+background: #f2f2f2;
+}
+
+div{
+  height: 50px;
+}
+.top_menu {
+  height: 50px;
+  background: #193467;
+
+}
+
 .header {
   background:  url(IMG/3395.jpg) no-repeat center / cover ;
-  height: 700px;
+  height: 200px;
   filter: alpha(Opacity=75); /* Полупрозрачность для IE */
   opacity: 0.75; /* Полупрозрачность для других браузеров */
-
+  width: 1200px;
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 h1, h2 {
   color: #000000;
-  text-align: left;
+
 
 }
