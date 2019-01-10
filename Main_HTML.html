@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <canvas   <canvas width = "1900" height = "1000"></canvas>
+      <canvas width = "1900" height = "1000"></canvas>
       <script>
         const canvas = document.querySelector('canvas');
         const ctx = canvas.getContext('2d');
@@ -17,7 +17,7 @@
 
 
         const cubes = [];
-        for (let i = 0; i < 25; i++) {
+        for (let i = 0; i < 100; i++) {
           cubes [i] = {
             x: Math.floor(Math.random() * (width - 50)),
             y: Math.floor(Math.random() * (height - 50)),
@@ -28,21 +28,21 @@
 
         setInterval (() => {
           ctx.clearRect (0, 0, width, height);
-          for (let i = 0; i < 25; i ++) {
-            ctx.fillRect ( cubes[i].x, cubes[i].y, 10, 10);
+          for (let i = 0; i < 100; i ++) {
+            ctx.fillRect ( cubes[i].x, cubes[i].y, 5, 5);
             cubes[i].x += cubes[i].speedX;
-            if (cubes[i].x < 0 || cubes[i].x > width - 10){
+            if (cubes[i].x < 0 || cubes[i].x > width - 5){
               cubes[i].speedX = -cubes[i].speedX;
             }
             cubes[i].y += cubes[i].speedY;
-            if (cubes[i].y < 0 || cubes[i].y > height - 10){
+            if (cubes[i].y < 0 || cubes[i].y > height - 5){
               cubes[i].speedY = -cubes[i].speedY;
           }
         }
       }, 25);
       </script>
 
-    
+
       <div>
       </div>
 
