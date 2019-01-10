@@ -8,9 +8,41 @@
     <title>JS | Jules Soloveva</title>
   </head>
   <body>
-    <header >
-      <div class= "top_menu">
-      </div>
+    <header>
+      <canvas   <canvas width = "1900" height = "1000"></canvas>
+      <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+        const [width, height] = [canvas.width, canvas.height];
+
+
+        const cubes = [];
+        for (let i = 0; i < 25; i++) {
+          cubes [i] = {
+            x: Math.floor(Math.random() * (width - 50)),
+            y: Math.floor(Math.random() * (height - 50)),
+            speedX: Math.random() - 0.5 < 0 ? -1 : 1,
+            speedY: Math.random() - 0.5 < 0 ? -1 : 1
+          };
+        }
+
+        setInterval (() => {
+          ctx.clearRect (0, 0, width, height);
+          for (let i = 0; i < 25; i ++) {
+            ctx.fillRect ( cubes[i].x, cubes[i].y, 10, 10);
+            cubes[i].x += cubes[i].speedX;
+            if (cubes[i].x < 0 || cubes[i].x > width - 10){
+              cubes[i].speedX = -cubes[i].speedX;
+            }
+            cubes[i].y += cubes[i].speedY;
+            if (cubes[i].y < 0 || cubes[i].y > height - 10){
+              cubes[i].speedY = -cubes[i].speedY;
+          }
+        }
+      }, 25);
+      </script>
+
+    
       <div>
       </div>
 

@@ -6,12 +6,18 @@ font-family: 'Source Sans Pro', sans-serif;
 div{
   height: 50px;
 }
-.top_menu {
-  height: 50px;
-  background: #19334d;
-  margin-top: -10px;
 
+canvas {
+  margin: 0px auto; /*задаем канвасу границы, стили*/
+  border: none;
+  display:block;
+  background: #002633;
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-left: -10px;
 }
+
+
 
 .header {
   background:  url(IMG/3395.jpg) no-repeat center / cover ;
