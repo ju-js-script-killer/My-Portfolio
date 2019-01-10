@@ -14,28 +14,31 @@
         const canvas = document.querySelector('canvas');
         const ctx = canvas.getContext('2d');
         const [width, height] = [canvas.width, canvas.height];
-
+        const colors = [ '#99ff99', '#66ffff', '#cc99ff', '#ff6699','#ff9933','#ff3300', 'white'];
+        const cubeSize = 5;
 
         const cubes = [];
         for (let i = 0; i < 100; i++) {
           cubes [i] = {
-            x: Math.floor(Math.random() * (width - 50)),
-            y: Math.floor(Math.random() * (height - 50)),
+            x: Math.floor(Math.random() * (width - cubeSize)),
+            y: Math.floor(Math.random() * (height - cubeSize)),
             speedX: Math.random() - 0.5 < 0 ? -1 : 1,
-            speedY: Math.random() - 0.5 < 0 ? -1 : 1
+            speedY: Math.random() - 0.5 < 0 ? -1 : 1,
+            color: colors[Math.floor(Math.random() * colors.length)]
           };
         }
 
         setInterval (() => {
           ctx.clearRect (0, 0, width, height);
-          for (let i = 0; i < 100; i ++) {
-            ctx.fillRect ( cubes[i].x, cubes[i].y, 5, 5);
+          for (let i = 0; i < 100; i++) {
+            ctx.fillStyle = cubes[i].color;
+            ctx.fillRect ( cubes[i].x, cubes[i].y, cubeSize, cubeSize);
             cubes[i].x += cubes[i].speedX;
-            if (cubes[i].x < 0 || cubes[i].x > width - 5){
+            if (cubes[i].x < 0 || cubes[i].x > width - cubeSize){
               cubes[i].speedX = -cubes[i].speedX;
             }
             cubes[i].y += cubes[i].speedY;
-            if (cubes[i].y < 0 || cubes[i].y > height - 5){
+            if (cubes[i].y < 0 || cubes[i].y > height - cubeSize){
               cubes[i].speedY = -cubes[i].speedY;
           }
         }
