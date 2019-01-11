@@ -1,10 +1,6 @@
 body {
-background: #f2f2f2;
-font-family: 'Source Sans Pro', sans-serif;
-}
 
-div{
-  height: 50px;
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 canvas {
@@ -12,18 +8,109 @@ canvas {
   border: none;
   display:block;
   background: #00004d;
-  border-radius: 5px;
+  border-radius: none;
   margin-top: -10px;
   margin-left: -10px;
 }
 
+.canvas_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+  }
 
+ .main_menu {
+  height: 50px;
+  width: 1900px;
+  background: #140033;
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+.wrap {
+    position: initial;
+    background: none;
+    overflow: visible;
+    height: initial;
+    text-align: left;
+}
 
-.header {
+nav {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: #1B242F;
+    border-bottom: 3px solid #04C2C9;
+    text-align: left;
+    z-index: 99;
+}
+
+nav .wrap div {
+    padding: 12px 20px;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: color .5s;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: initial;
+    font-size: initial;
+    display: inline;
+    color: white;
+  }
+nav .wrap div:hover {
+  color: #ff80df;
+}
+
+ .greetings {
+   background: #ffcc66;
+   color: white;
+   font-size: 55px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ .name {
+   color: #ff80df;
+ }
+
+ .view_button {
+  border-color: white;
+  color: white;
+  background: none;
+  height: 50px;
+  width: 200px;
+  font-size: 25px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+ }
+ .view_button:hover {
+  background: #04C2C9;
+  border: none;
+  font-size: 23px;
+ }
+ .about {
+   padding-top: 1500px;
+   height: 1000px;
+   width: 1900px;
+ }
+ .portfolio {
+   left: 0;
+   height: 1000px;
+   width: 1900px;
+   background:  #f2f2f2;
+   margin-left: -5px;
+ }
+  /*.header {
   background:  url() no-repeat center / cover ;
   height: 180px;
-  filter: alpha(Opacity=75); /* Полупрозрачность для IE */
-  opacity: 0.75; /* Полупрозрачность для других браузеров */
+  filter: alpha(Opacity=75);  Полупрозрачность для IE
+/*  opacity: 0.75;  Полупрозрачность для других браузеров
   margin: auto;
 }
 .h_d {
@@ -54,3 +141,4 @@ canvas {
   margin-top: 0px;
   font-size: 25px;
 }
+*/
