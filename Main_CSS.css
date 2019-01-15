@@ -73,7 +73,7 @@ nav .wrap div:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   
+
  }
  .name {
    color: #ff80df;
@@ -106,6 +106,33 @@ nav .wrap div:hover {
    background:  #f2f2f2;
    margin-left: -5px;
  }
+
+ .A_topic {
+ font-size: 45px;
+ color: #404040;
+ margin-top: -170px;
+ text-transform: uppercase;
+ }
+
+ .flex.row {
+    flex-direction: row;
+  }
+
+  .quality_item {   /* Задаем всем блокам одинаковое местоположение на странице */
+  width: 397px;
+  height: 355px;
+  float: left;
+  text-align: center;
+  }
+  .quality_item h3 {
+    color: #404040;
+    font-size: 23px;
+
+  }
+  .quality_item p {
+  font-size: 16px;
+  color: #8c8c8c;
+  }
   /*.header {
   background:  url() no-repeat center / cover ;
   height: 180px;
