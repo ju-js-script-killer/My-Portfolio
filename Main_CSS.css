@@ -66,14 +66,17 @@ nav .wrap div:hover {
 }
 
  .greetings {
-   background: #ffcc66;
+   background: none;
    color: white;
    font-size: 55px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
+   position: absolute;
+   top: 400px;
+   width: 70%;
+   right: 270px;
  }
  .name {
    color: #ff80df;
@@ -133,39 +136,3 @@ nav .wrap div:hover {
   font-size: 16px;
   color: #8c8c8c;
   }
-  /*.header {
-  background:  url() no-repeat center / cover ;
-  height: 180px;
-  filter: alpha(Opacity=75);  Полупрозрачность для IE
-/*  opacity: 0.75;  Полупрозрачность для других браузеров
-  margin: auto;
-}
-.h_d {
-  width: 1200px;
-  margin: auto;
-  border-radius: 3px;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  height: 400px;
-
-}
-
-.discrip {
-  width: 1200px;
-  margin: auto;
-  height: 220px;
-  background: white;
-}
- .h4 {
-  color: #000000;
-  font-weight: normal;
-  font-size: 20px;
-  padding-right: 20px;
-}
-.h3 {
-  color: #000000;
-  font-weight: normal;
-  margin-top: 0px;
-  font-size: 25px;
-}
-*/
