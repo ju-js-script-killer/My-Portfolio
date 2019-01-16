@@ -1,5 +1,5 @@
 window.onload = function() {
-   var menu = document.querySelector('.menu');
+   var menu = document.querySelector('.main_menu');
    var top1 = menu.offsetTop; // top1 = 808
    var fixed = false;
    document.onscroll = function() {
@@ -12,11 +12,4 @@ window.onload = function() {
        fixed = false;
      }
    };
-
-
-
-
-
-
-
-}
+};

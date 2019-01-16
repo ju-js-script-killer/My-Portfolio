@@ -88,9 +88,10 @@ nav .wrap div:hover {
   background: none;
   height: 50px;
   width: 200px;
-  font-size: 25px;
+  font-size: 22px;
   transition-duration: 0.8s;
   cursor: pointer;
+  font-weight: lighter;
  }
  .view_button:hover {
   background: #04C2C9;
@@ -98,7 +99,7 @@ nav .wrap div:hover {
   font-size: 23px;
  }
  .about {
-   padding-top: 1500px;
+   padding-top: 1300px;
    height: 1000px;
    width: 1900px;
  }
@@ -120,19 +121,48 @@ nav .wrap div:hover {
  .flex.row {
     flex-direction: row;
   }
-
+  .flex_row_label_wrap {
+   height: 355px;
+   position: relative;
+   padding-left: 250px;
+   padding-top: 70px;
+  }
   .quality_item {   /* Задаем всем блокам одинаковое местоположение на странице */
-  width: 397px;
-  height: 355px;
-  float: left;
-  text-align: center;
+    width: 300px;
+    height: 355px;
+    float: left;
+    text-align: center;
+    margin-right: 50px
   }
   .quality_item h3 {
     color: #404040;
-    font-size: 23px;
+    font-size: 25px;
 
   }
   .quality_item p {
-  font-size: 16px;
+  font-size: 18px;
   color: #8c8c8c;
+  }
+  .quality_image {
+   background-color: #04C2C9;
+   width: 150px;
+   height: 150px;
+   position: relative;
+   left: 30%;
+   font-size: 100px;
+   color: white;
+   border-radius: 100px;
+   justify-content: center
+
+  }
+
+  .label {
+    margin: 15px 10px;
+    padding-left: 25px;
+  }
+
+  .fixed {                  /* CSS для закрепления меню при прокрутке*/
+    position: fixed;
+    width: 100%;
+    top: 0px;
   }
