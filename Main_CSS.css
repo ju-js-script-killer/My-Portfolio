@@ -149,12 +149,21 @@ nav .wrap div:hover {
    height: 150px;
    position: relative;
    left: 30%;
-   font-size: 100px;
+   font-size: 80px;
    color: white;
    border-radius: 100px;
-   justify-content: center
-
+   cursor: pointer;
+   transition-duration: 0.7s;
   }
+  #quality_icons {
+  padding-top: 35px;
+  cursor: pointer;
+ }
+.quality_image:hover {
+   background-color: white;
+   color: #04C2C9;
+   font-size: 100px;
+}
 
   .label {
     margin: 15px 10px;
@@ -166,3 +175,19 @@ nav .wrap div:hover {
     width: 100%;
     top: 0px;
   }
+.JS_Photo {
+width: 350px;
+height: 350px;
+border-radius: 200px;
+position: relative;
+
+}
+.my_avatar {
+  border: 4px dashed #f370dd6b;
+  border-radius: 200px;
+  width: 352px;
+  height: 352px;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 70px;
+}
