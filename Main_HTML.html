@@ -14,7 +14,7 @@
   <body>
     <section>
     <div class= 'canvas_wrap'>
-      <canvas width = "1900" height = "1000"></canvas>
+      <canvas width = "1910" height = "1000"></canvas>
       <script>
         const canvas = document.querySelector('canvas');
         const ctx = canvas.getContext('2d');
@@ -23,19 +23,19 @@
         const cubeSize = 5;
 
         const cubes = [];
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 200; i++) {
           cubes [i] = {
             x: Math.floor(Math.random() * (width - cubeSize)),
             y: Math.floor(Math.random() * (height - cubeSize)),
-            speedX: Math.random() - 0.5 < 0 ? -1 : 1,
-            speedY: Math.random() - 0.5 < 0 ? -1 : 1,
+            speedX: Math.random() - 0.5 < 0 ? -0.8 : 0.8,
+            speedY: Math.random() - 0.5 < 0 ? -0.8 : 0.8,
             color: colors[Math.floor(Math.random() * colors.length)]
           };
         }
 
         setInterval (() => {
           ctx.clearRect (0, 0, width, height);
-          for (let i = 0; i < 100; i++) {
+          for (let i = 0; i < 200; i++) {
             ctx.fillStyle = cubes[i].color;
             ctx.fillRect ( cubes[i].x, cubes[i].y, cubeSize, cubeSize);
             cubes[i].x += cubes[i].speedX;
@@ -73,8 +73,7 @@
 
     <section>
         <div class ='about'>
-          <center><h1 class = 'A_topic'>About</h1></center>
-
+          <h1 class = 'A_topic'>About</h1>
         <div class = 'flex_row_label_wrap'>
             <div class = 'flex_row_label_left'>
               <div class="quality_item">
@@ -82,8 +81,8 @@
                      <i id = 'quality_icons' class="fas fa-rocket"></i>
                   </div>
                   <div class = 'label'>
-                    <h3>Fast</h3>
-                    <p>Fast load times and lag free interaction, my highest priority.</p><br/>
+                    <div class="quality_name">Fast</div>
+                    <div class="quality_discr">Fast load times and lag free interaction, my highest priority.</div><br/>
                 </div>
               </div>
               <div class="quality_item">
@@ -91,8 +90,8 @@
                   <i id = 'quality_icons' class="fas fa-laptop"></i>
                   </div>
                   <div class = 'label'>
-                  <h3>Responsive</h3>
-                  <p>My layouts will work on any device, big or small.</p><br/>
+                  <div class="quality_name">Responsive</div>
+                  <div class="quality_discr">My layouts will work on any device, big or small.</div><br/>
                   </div>
               </div>
             </div>
@@ -102,8 +101,8 @@
                 <i id = 'quality_icons' class="fas fa-lightbulb"></i>
                 </div>
                 <div class = 'label'>
-                  <h3>Intuitive</h3>
-                  <p>Strong preference for easy to use, intuitive UX/UI.</p><br/>
+                  <div class="quality_name">Intuitive</div>
+                  <div class="quality_discr">Strong preference for easy to use, intuitive UX/UI.</div><br/>
                   </div>
                </div>
                <div class="quality_item">
@@ -111,19 +110,33 @@
                   <i id = 'quality_icons' class="far fa-images"></i>
                    </div>
                    <div class = 'label'>
-                   <h3>Dynamic</h3>
-                   <p>Websites don't have to be static, I love making pages come to life.</p><br/>
+                   <div class="quality_name">Dynamic </div>
+                   <div class="quality_discr">Websites don't have to be static, I love making pages come to life.</div><br/>
                    </div>
               </div>
             </div>
         </div>
-
+     <div class = 'avatar_effect'>
     <div class= 'my_avatar'>
      <img src="IMG/Jussy Passport Photo.jpg" alt="JS Photo"	class="JS_Photo">
     </div>
-
-
-
+    <div class = "description">
+    <div class = 'about_question'> Who am I ? </div>
+    <div class = 'question_answer'>
+       I'm the Front-End Developer for
+      <a class = 'highlight' href = 'https://chatex.com'> Chatex</a>
+      in Tallin, Estonia.<br/>
+      I have strong passion for creating animated, intuitive, dynamic UI for best UX ever!<br/>
+      <span class = 'highlight' dest = 'contact'> Do you wanna make something special ?</span>
+    </div>
+  </div>
+</div>
+      <div class = 'animated_bar_slide'>
+        <div class="bar_flex"></div>
+        <div class="bar_fill"></div>
+        <div class="bar_tag">CSS</div>
+        <span>80%</span>
+      </div>
 
 
 
