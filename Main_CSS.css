@@ -96,18 +96,14 @@ nav .wrap div:hover {
   border: none;
   font-size: 23px;
  }
- .about {
+
+
+ .about {                         /* раздел обо мне */
    padding-top: 1300px;
-   height: 1000px;
+   height: 800px;
    width: 1910px;
  }
- .portfolio {
-   left: 0;
-   height: 1000px;
-   width: 1910px;
-   background:  #f2f2f2;
-   margin-left: -5px;
- }
+
 
  .A_topic {
  font-size: 45px;
@@ -195,6 +191,7 @@ position: relative;
 .avatar_effect {
   height: 400px;
   width:  700px;
+  margin-left: 100px;
 }
 .highlight {
 color: #008ae6;
@@ -225,21 +222,166 @@ text-align: center;
   height: 500px;
   float: right;
   margin-top: -400px;
-  margin-right: 400px;
+  margin-right: 450px;
 }
 .bar_flex {
 width: 600px;
 height: 30px;
-border: 1px solid #8c8c8c;
+background: #f2f2f2
 
 }
 .bar_fill {
-  width: 75%;
   height: 30px;
-  background-color: #04C2C9;
+  background-color: #039196;
   position: relative;
-  top: -31px;
+  top: -30px;
 }
 .bar_tag {
+background: #04C2C9;
+width: 5%;
+height: 30px;
+text-align: center;
+color: white;
+margin-top: -60px;
+position: absolute;
+font-weight: bold;
+}
+.bar_percent {
+  color: #8c8c8c;
+  font-size: 18px;
+  margin-top: -57px;
+  position: absolute;
+  margin-left: 550px;
+}
+.one {
+  width: 75%;
+}
+.two {
+  width: 85%;
+}
+.three {
+  width: 45%;
+}
+.four {
+  width: 45%;
+}
+.five {
+  width: 85%;
+}
+.six {
+  width: 90%;
+}                                 /* конец раздела обо мне */
 
+
+
+
+.portfolio {                      /*  раздел портфолио, мои работы  */
+  left: 0;
+  height: 1000px;
+  width: 1910px;
+  background:  #f2f2f2;
+  margin-left: -5px;
+}
+
+                                /* конец раздела портфолио, мои работы  */
+
+.blog {                      /*  раздел блога  */
+  height: 1000px;
+  width: 1910px;
+}
+
+                             /*  конец раздела блога  */
+
+  .contact {                      /*  раздел контактов  */
+   height: 700px;
+   width: 1910px;
+   background: #00004d;
+   margin-left: -8px;
+   opacity: 0.6;
+   }
+  .C_topic {
+    font-size: 45px;
+    color: white;
+    padding-top: 180px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+  }
+ .C_question {
+ font-size: 18px;
+ font-weight: bolder;
+ color: #04C2C9;
+ padding-left: 800px;
+ padding-top: 30px;
+ }
+.contact_form {
+margin-left: 652px;
+margin-top: 40px;
+}
+.input_line {
+border: 3px solid #04C2C9;
+width: 600px;
+height: 30px;
+margin-top: 5px;
+border-radius: 2px;
+
+}
+.input_box {
+  border: 3px solid #04C2C9;
+  width: 596px;
+  height: 150px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.sub_button {
+margin-left: 222px;
+border: 2px solid white;
+background-color: #00004d;
+color: white;
+width: 150px;
+height: 40px;
+font-size: 20px;
+margin-top: 5px;
+transition-duration: .4s;
+}
+.sub_button:hover {
+  background-color: #04C2C9;
+  border: 1px solid #04C2C9;
+}
+   .footer {
+     height: 200px;
+     width: 1910px;
+     background: #0a0a29;
+     margin-left: -8px;
+   }
+   .chevron {
+    top: -25px;
+    background: #E31B6D;
+    font-size: 30pt;
+    width: 46px;;
+    height: 53px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background .5s;
+  }
+  .fa-chevron-up {
+    color: white;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+.chevron:hover {
+  background-color: #e7327d;
+}
+.footer_name{
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-top: 100px;
+  padding-left: 870px;
+}
+.year{
+  color: #e7327d;
+  font-size: 14px;
 }
