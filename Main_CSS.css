@@ -250,7 +250,7 @@ position: absolute;
 font-weight: bold;
 }
 .web_tool{
-  padding-top: 4px;
+  padding-top: 6px;
 }
 .bar_percent {
   color: #8c8c8c;
@@ -297,12 +297,27 @@ font-weight: bold;
   font-weight: bolder;
 }
 .data_filter {
-  width: 100px;
+  width: 160px;
   height: 30px;
-  border: 1px solid black;
+  background: #8c8c8c40;
+  display: inline-block;
+  margin-left: 120px;
+  text-align: center;
+  color: #5f5e5e;
+  font-size: 22px;
+  cursor: pointer;
+  padding-top: 5px;
 }
+.skills_row {
+  margin-left: 514px;
+  margin-top: 60px;
 
-
+}
+.all {
+  background-color: #E31B6D;
+  color: white;
+  border: none;
+}
 
 
 
