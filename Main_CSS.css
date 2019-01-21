@@ -53,7 +53,7 @@ nav .wrap div {
     cursor: pointer;
     transition: color .5s;
     text-transform: uppercase;
-    margin: 0 20px;
+    margin: 0 30px;
     padding: initial;
     font-size: initial;
     display: inline;
@@ -155,7 +155,10 @@ nav .wrap div:hover {
    color: #04C2C9;
    font-size: 100px;
 }
-
+  .fa-node-js {
+    color: #ff80df;
+    font-size: 24px;
+  }
   .label {
     margin: 15px 10px;
     padding-left: 25px;
@@ -246,6 +249,9 @@ margin-top: -60px;
 position: absolute;
 font-weight: bold;
 }
+.web_tool{
+  padding-top: 4px;
+}
 .bar_percent {
   color: #8c8c8c;
   font-size: 18px;
@@ -282,6 +288,26 @@ font-weight: bold;
   background:  #f2f2f2;
   margin-left: -5px;
 }
+.P_topic {
+  font-size: 45px;
+  color: #404040;
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+}
+.data_filter {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
 
                                 /* конец раздела портфолио, мои работы  */
 
@@ -295,14 +321,13 @@ font-weight: bold;
   .contact {                      /*  раздел контактов  */
    height: 700px;
    width: 1910px;
-   background: #00004d;
+   background: #302748;
    margin-left: -8px;
-   opacity: 0.6;
    }
   .C_topic {
     font-size: 45px;
     color: white;
-    padding-top: 180px;
+    padding-top: 100px;
     text-transform: uppercase;
     text-align: center;
     font-weight: bolder;
@@ -319,24 +344,29 @@ margin-left: 652px;
 margin-top: 40px;
 }
 .input_line {
-border: 3px solid #04C2C9;
-width: 600px;
+border: none;
+width: 602px;
 height: 30px;
 margin-top: 5px;
 border-radius: 2px;
-
+font-family: arial;
+font-size: 12pt;
+padding-left: 10px;
 }
 .input_box {
-  border: 3px solid #04C2C9;
-  width: 596px;
+  border: none;
+  width: 598px;
   height: 150px;
   margin-top: 5px;
   border-radius: 2px;
+  font-family: arial;
+  font-size: 12pt;
+  padding: 7px;
 }
 .sub_button {
-margin-left: 222px;
+margin-left: 226px;
 border: 2px solid white;
-background-color: #00004d;
+background-color: #302748;
 color: white;
 width: 150px;
 height: 40px;
@@ -349,22 +379,21 @@ transition-duration: .4s;
   border: 1px solid #04C2C9;
 }
    .footer {
-     height: 200px;
+     height: 250px;
      width: 1910px;
      background: #0a0a29;
      margin-left: -8px;
+     position: absolute;
    }
    .chevron {
-    top: -25px;
+    margin-top: -28px;
     background: #E31B6D;
     font-size: 30pt;
     width: 46px;;
     height: 53px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    margin-left: 932px;
     cursor: pointer;
-    transition: background .5s;
+    transition-duration: .5s;
   }
   .fa-chevron-up {
     color: white;
@@ -374,11 +403,54 @@ transition-duration: .4s;
 .chevron:hover {
   background-color: #e7327d;
 }
+.social_nets a {
+  height: 55px;
+  width: 55px;
+  display: inline-block;
+  margin-left: 25px;
+  background: #302748;
+  transition-duration: .4s;
+}
+.fa-linkedin-in {
+  padding-top: 16px;
+  padding-left: 18px;
+  font-size: 21px;
+  color: white;
+}
+.fa-facebook-f {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 22px;
+  color: white;
+}
+.fa-instagram {
+  padding-top: 15px;
+  padding-left: 16px;
+  font-size: 22px;
+  color: white;
+}
+.fa-github-square {
+  padding-top: 12px;
+  padding-left: 16px;
+  font-size: 25px;
+  color: white;
+}
+.social_nets a:hover{
+ background:#04C2C9;
+}
+.social_nets {
+  padding-left: 779px;
+  padding-top: 60px;
+}
+
+
+
+
 .footer_name{
   color: #cccccc;
   text-transform: uppercase;
   font-size: 15px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 870px;
 }
 .year{
