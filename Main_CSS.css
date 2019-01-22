@@ -250,7 +250,7 @@ position: absolute;
 font-weight: bold;
 }
 .web_tool{
-  padding-top: 6px;
+  padding-top: 3px;
 }
 .bar_percent {
   color: #8c8c8c;
@@ -306,10 +306,10 @@ font-weight: bold;
   color: #5f5e5e;
   font-size: 22px;
   cursor: pointer;
-  padding-top: 5px;
+
 }
 .skills_row {
-  margin-left: 514px;
+  margin-left: 477px;
   margin-top: 60px;
 
 }
@@ -317,6 +317,26 @@ font-weight: bold;
   background-color: #E31B6D;
   color: white;
   border: none;
+}
+.mix {
+width: 400px;
+height: 300px;
+border: 1px solid black;
+display: inline-block;
+margin-right: -3px;
+}
+.mix_2nd_row {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: -3px;
+  margin-top: -4px;
+}
+
+.P_gallery {
+padding-top: 30px;
+padding-left: 350px;
 }
 
 
@@ -330,7 +350,14 @@ font-weight: bold;
   height: 1000px;
   width: 1910px;
 }
-
+.B_topic {
+  font-size: 45px;
+  color: #404040;
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+}
                              /*  конец раздела блога  */
 
   .contact {                      /*  раздел контактов  */
