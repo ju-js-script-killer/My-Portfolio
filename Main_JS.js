@@ -12,4 +12,22 @@ window.onload = function() {   // запуск работы джава скри�
        fixed = false; // и присваиваем второму классу и его свойствам фолс
      }
    };
+  // не работает ! Функция скрола к разделу при нажатии на кнопки переменную
+     var MainMenu = document.querySelector('.wrap');
+     MainMenu.onclick = function(e) {
+     let target = e.target;
+     let idblock = target.className;
+     let scrollTarget = document.querySelector('#' + idblock).offsetTop;
+
+     let t = setInterval(function() {
+       if (Math.abs(scrollY - scrollTarget) < 10) {
+         scrollTo(0, scrollTarget);
+         clearInterval(t);
+       } else if (scrollY < scrollTarget) {
+         scrollBy(0, 20);
+       } else if (scrollY > scrollTarget) {
+         scrollBy(0, -20);
+       }
+     }, 15);
+};
 };
