@@ -1,4 +1,5 @@
 window.onload = function() {   // запуск работы джава скрипта по загрузке страницы
+// 1.fixed main_menu
    var menu = document.querySelector('.main_menu'); // создаем переменную и вызываем свойство .main_menu
    var top1 = menu.offsetTop; // top1 = 808 // сооздаем переменную и командой offsetTop берем координаты верней части блока по оси Y
    var fixed = false; // предварительно создаем класс fixed, прописывем его новые свойства в css, здесь создем переменную присвоив ей значение фолс
@@ -12,7 +13,7 @@ window.onload = function() {   // запуск работы джава скри�
        fixed = false; // и присваиваем второму классу и его свойствам фолс
      }
    };
-  // не работает ! Функция скрола к разделу при нажатии на кнопки переменную
+  // 2. Функция скрола к разделу при нажатии на кнопки в main_menu
      var MainMenu = document.querySelector('.wrap');
      MainMenu.onclick = function(e) {
      let target = e.target;
@@ -20,13 +21,13 @@ window.onload = function() {   // запуск работы джава скри�
      let scrollTarget = document.querySelector('#' + idblock).offsetTop;
 
      let t = setInterval(function() {
-       if (Math.abs(scrollY - scrollTarget) < 10) {
+       if (Math.abs(scrollY - scrollTarget) < 15) {
          scrollTo(0, scrollTarget);
          clearInterval(t);
        } else if (scrollY < scrollTarget) {
-         scrollBy(0, 20);
+         scrollBy(0, 30);
        } else if (scrollY > scrollTarget) {
-         scrollBy(0, -20);
+         scrollBy(0, -30);
        }
      }, 15);
 };

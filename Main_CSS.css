@@ -97,9 +97,14 @@ nav .wrap div:hover {
   font-size: 23px;
  }
 
-
+#home_section{
+height: 1045px;
+}
+#about_section{
+height: 1100px;
+}
  .about {                         /* раздел обо мне */
-   padding-top: 1300px;
+   padding-top: 300px;
    height: 800px;
    width: 1910px;
  }
@@ -478,11 +483,19 @@ transition-duration: .4s;
   font-size: 25px;
   color: white;
 }
+
+.fa-codepen{
+  padding-top: 11px;
+  padding-left: 16px;
+  font-size: 23px;
+  color: white;
+  margin-top: 3px;
+}
 .social_nets a:hover{
  background:#04C2C9;
 }
 .social_nets {
-  padding-left: 779px;
+  padding-left: 740px;
   padding-top: 60px;
 }
 
